@@ -20,7 +20,7 @@ if (Meteor.isClient) {
   });
 
   Template.hello.rendered = function(){
-    $('input').mask('(999) 999-9999', {placeholder:" "});
+    $('input[name=phone]').mask('(999) 999-9999', {placeholder:" "});
   };
 }
 
